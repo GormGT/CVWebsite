@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Shooting Gallery</title>
+        <link rel='stylesheet' href='styles.css'>
+    </head>
+    <body>
+        <header>
+            <h1 id="mainTitle">The Shooting Gallery</h1>
+            <h3 onclick="startGame()" id="mainDesc">Click here to begin.</p>
+        </header>
+        <div class="counters">
+            <div class="score">
+                <h3>Score:</h3>
+                <p class="scoreCounter">0</p>
+            </div>
+            <div class="health">
+                <h3>Health:</h3>
+                <p class="healthCounter">100</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <button id="t1" class="target"></button>
+            <button id="t2" class="target"></button>
+            <button id="t3" class="target"></button>
+            <button id="t4" class="target"></button>
+            <button id="t5" class="target"></button>
+            <button id="t6" class="target"></button>
+            <button id="t7" class="target"></button>
+            <button id="t8" class="target"></button>
+        </div>
+        <div class="gun">
+            <img src="images/Shotgun.png" width="325" height="298">
+        </div>
+        <footer>
+            <p id="bottomCredit">Created by AG</p>
+        </footer>
+        <script src='main.js'></script>
+    </body>
+</html>

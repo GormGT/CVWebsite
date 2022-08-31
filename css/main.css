@@ -1,0 +1,171 @@
+/*Oppretter generelle stiler*/
+::selection{
+    /*Endre fargen som kommer når du velger noe*/
+    color: black;
+    background: red;
+}
+body{
+    background-color: black;
+    margin: 0px;
+}
+.bg-dark{
+    background-color: #131313!important;
+}
+.generalText{
+    font-family: "lato";
+}
+.mainDesc, .mainName {
+    font-family: "lato";
+}
+.mainName{
+    margin-top: 100px;
+}
+ul {
+    white-space: nowrap;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul li a{
+    font-family: "lato";
+}
+.mainName{
+    text-align: center;
+}
+li p span{
+    font-size: 18px;
+}
+/*Stiler for footer seksjonen som er på hver eneste side*/
+footer {
+    font-family: "lato";
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+footer .contactLink a{
+    display: inline-block;
+}
+footer .steamLink {
+    text-align: right;
+    padding: 0px 0px;
+}
+footer .steamLink a{
+    display: inline-block;
+}
+footer .contactEmail p{
+    padding: 0.5rem 1rem;
+}
+footer h5{
+    text-align: center;
+    margin-bottom: 0px;
+}
+/*Mer spesifikke stiler, som stiler forskjellige elementer som trenger forskjellige stiler på hver side*/
+.indexImage{
+    position: relative;
+    left: 20%;
+    margin-top: 100px;
+}
+.indexDesc{
+    position: relative;
+    left: 10%;
+    top: 100px;
+}
+.schoolImage{
+    position: relative;
+    top: 125px;
+}
+.schoolDesc{
+    position: relative;
+    top:50px;
+}
+.eduItem{
+    padding:10px 0px;
+}
+.smallForm{
+    padding:30px;
+}
+.messageLabel{
+    text-align: left;
+    padding:10px;
+}
+.smallForm .formSubmit{
+    text-align: center;
+}
+.formDesc{
+    margin-top: 80px;
+}
+.workDesc{
+    left: 0%;
+    top: 200px;
+}
+.workImage{
+    position: relative;
+    top: 50px;
+}
+.workMain{
+    position: relative;
+    padding-bottom: 183px;
+    padding-top: 100px;
+}
+.indexMain{
+    padding-bottom: 9px;
+}
+.eduMain{
+    padding-bottom: 17px;
+}
+.hobbyMain{
+    padding-bottom: 270px;
+}
+.hobbyNav{
+    text-align: center;
+    padding: 20px 0px;
+}
+.hobbyImage{
+    text-align: center;
+}
+.hobbyText{
+    text-align: center;
+    padding:10px 0px;
+}
+/*Manuelle media queries, noen enkelte elementer ble ikke justert riktig av bootstrap*/
+@media screen and (max-width: 768px){
+    .longNav{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 515px){
+    .longNav{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 993px){
+    .hobbyImage{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 515px){
+    .hobbyNav{
+        display: inline-block;
+    }
+}
+/*
+
+Opprinnelig var det mye mer manuelle media queries, men disse skapte bare problemer og ble etter hvert fjernet
+
+@media screen and (max-width: 777px){
+    .indexImage{
+        top:100px;
+    }
+}
+@media screen and (max-width: 1399px){
+    .schoolDesc{
+        left: 250px;
+    }
+}
+@media screen and (max-width: 1399px){
+    .schoolImage{
+        left: 250px;
+    }
+}
+*/

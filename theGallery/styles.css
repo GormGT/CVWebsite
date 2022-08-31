@@ -1,0 +1,94 @@
+body {
+    text-align: center;
+    background-color: darkslategray;
+    margin: 0px;
+}
+#mainTitle {
+    font-family: fantasy;
+    color: crimson;
+    font-size: 46px;
+    word-spacing: 2px;
+    text-shadow: 2px 1px darkred;
+    margin:25px;
+}
+#mainDesc {
+    color:goldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    position: relative;
+    white-space: nowrap;
+    bottom: 24px;
+}
+.counters {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:goldenrod;
+    font-size: 17px;
+    position: relative;
+    bottom: 50px;
+    display:inline-block;
+    white-space: nowrap;
+    text-align: center;
+}
+.score, .health{
+    display: inline-block;
+    padding: 0px 10px;
+}
+/*.health {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: goldenrod;
+    font-size: 17px;
+    position:absolute;
+    bottom: 530px;
+    left: 780px;
+    margin:0px;
+}*/
+#bottomCredit{
+    font-family:fantasy;
+    font-size:25px;
+    color: crimson;
+    position: absolute;
+    Right: 200px;
+    bottom: 20px;
+}
+.gallery p {
+    color: goldenrod;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#t1, #t2, #t3, #t4, #t5, #t6, #t7, #t8  {
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 15px;
+    outline: none;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: 115px;
+}
+/*#t1 {
+    background-image: url("images/ZombieNormal.png");
+}
+#t2 {
+    background-image: url("images/ZombieNormal.png");
+}
+#t3 {
+    background-image: url("images/ZombieNormal.png");
+}
+#t4 {
+    background-image: url("images/ZombieNormal.png");
+}
+#t5 {
+    background-image: url("images/ZombieNormal.png");
+}
+#t6 {
+    background-image: url("images/ZombieNormal.png");
+}
+#t7 {
+    background-image: url("images/ZombieNormal.png");
+}
+#t8 {
+    background-image: url("images/ZombieNormal.png");
+}*/

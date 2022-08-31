@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Koble til bootstrap og font awesome, i tillegg til ekstra CSS-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/2803e0bd27.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt meg</title>
+</head>
+<body>
+    <header>
+        <!--Navbaren som alltid er på toppen av skjermen-->
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand text-start fs-3 ps-3" href="../index.html">AG Productions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link text-danger">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  href="../html/arbeidserfaring.html" class="nav-link text-danger">Arbeidserfaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  href="../html/utdanning.html" class="nav-link text-danger">Utdanning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  href="../html/hobby.html" class="nav-link text-danger">Hobbyer og interesser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  href="../html/kontakt.html" class="nav-link text-light">Kontakt</a>
+                        </li>
+                        <!--En dropdown meny som inneholder ekstra alternativer/nettsider-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Annet
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarScrollingDropdown">
+                                <li>
+                                    <!--Gir nettsiden et lyst/mørkt tema-->
+                                    <a class="dropdown-item lightModeToggler"  onclick="toggleLightMode()">Light theme</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><span class="dropdown-item-text">Ting jeg har laget:</span></li>
+                                <li>
+                                    <!--Et spill jeg har laget i Javascript på fritiden min-->
+                                    <a class="dropdown-item" href="../theGallery/index.html"><i class="fa-solid fa-gun"></i> The Shooting Gallery</a>
+                                </li>
+                                <li>
+                                    <!--Alt jeg har lagt ut på Steam workshop, som er en hub for samfunnsinnhold for spill. Her har jeg laget utallige baner for forskjellige spill, og andre ting.-->
+                                    <a class="dropdown-item" href="https://steamcommunity.com/profiles/76561198427341297/myworkshopfiles/"><i class="fa-brands fa-steam-symbol"></i> Min Steam-Workshop</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <main class="container">
+        <!--Hovedsiden. Denne endrer seg mellom hver side-->
+        <div class="row">
+        <div class="col formDesc">
+            <h1 class="mainName text-danger">Kontakt meg</h1>
+            <p class="mainDesc text-light">Er det noe du har lyst til å fortelle meg? På denne siden kan du kontakte meg ved å fylle inn feltene nedenfor, og så sende det til meg på adventuregamr@gmail.com.</p>
+        </div>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-8 smallForm">
+                <form class="formSite text-danger" action="mailto:gormt@viken.no" method="post" enctype="text/plain">
+                    <div class="row">
+                    <div class="mb-3 col">
+                        <label for="exampleFormControlInput1" class="form-label">Navn:</label>
+                        <input type="Name" class="form-control" id="exampleFormControlInput1" required>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="exampleFormControlInput1" class="form-label">Email addresse:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Melding:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
+                      </div>
+                    <button type="submit" class="formSubmit btn btn-danger btn-lg">Send</button>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-danger">
+        <!--Footeren som ligger på bunnen av nettsiden. Opprinnelig var denne hele tiden festet til bunnen av skjermen, men det så ikke helt fint ut på sider der man måtte scrolle.
+    Hele nettsiden ble laget på en laptop, og dermed er oppløsningen basert på det. Bruker man nettsiden på høyere oppløsninger kan footeren ikke alltid bli liggende på bunnen.-->
+        <div class="container">
+            <div class="footerLinks row">
+                <div class="contactLink col">
+                    <a href="../html/kontakt.html" class="nav-link text-danger"><i class="fa-solid fa-envelope"></i> Kontakt meg</a>
+                    <div class="contactEmail col">
+                        <p>Min epost : adventuregamr@gmail.com</p>
+                    </div>
+                </div>
+                <div class="steamLink col">
+                    <a href="https://steamcommunity.com/profiles/76561198427341297/" class="nav-link text-danger"><i class="fa-brands fa-steam"></i> Min Steam profil</a>
+                </div>
+            </div>
+            <h5 class="bottomCredit">Gorm Gustav Taubøll 2005-2022</h5>
+        </div>
+    </footer>
+    <!--Legge til javascript og javascript-delen av bootstrap-->
+    <script src='../javaScript/main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--To do list:
+-->
