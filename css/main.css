@@ -60,6 +60,7 @@ footer h5{
     margin-bottom: 0px;
 }
 /*Mer spesifikke stiler, som stiler forskjellige elementer som trenger forskjellige stiler på hver side*/
+
 .indexImage{
     position: relative;
     left: 20%;
@@ -93,6 +94,7 @@ footer h5{
 }
 .formDesc{
     margin-top: 80px;
+    text-align: center;
 }
 .workDesc{
     left: 0%;
